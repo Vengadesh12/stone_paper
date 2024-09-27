@@ -1,0 +1,11 @@
+CREATE DATABASE rock_paper_scissors;
+USE rock_paper_scissors;
+
+CREATE TABLE game_results (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player1_name VARCHAR(50),
+    player2_name VARCHAR(50),
+    player1_score INT,
+    player2_score INT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
